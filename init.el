@@ -17,15 +17,35 @@ There are two things you can do about this warning:
     (add-to-list 'package-archives (cons "gnu" (concat proto "://elpa.gnu.org/packages/")))))
 (package-initialize)
 
+;; This is only needed once, near the top of the file
+(eval-when-compile
+  (require 'use-package))
+
+(use-package foo)
+
+;; load other path
+(add-to-list 'load-path "~/.emacs.d/keybindings.el")
+(add-to-list 'load-path "~/.emacs.d/packages.el")
+
 ;; theme
-(set-background-color "spacemacs-theme")
+(load-theme 'spacemacs-dark t)
+
+;; font-size
+(set-face-attribute 'default nil :height 140)
 
 ;; customize
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(blink-cursor-mode nil)
+ '(custom-safe-themes
+   (quote
+    ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default)))
  '(menu-bar-mode nil)
  '(tool-bar-mode nil)
-  )
+ '(scroll-bar-mode nil))
 
 ;; make typing delete/overwrites selected text
 (delete-selection-mode 1)
@@ -59,3 +79,9 @@ There are two things you can do about this warning:
 (global-visual-line-mode 1)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
