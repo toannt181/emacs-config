@@ -33,10 +33,10 @@
   :ensure t
   :commands (avy-goto-char)
   :config
-  (setq avy-background t)
+    (setq avy-background t)
   :custom-face
-  (avy-lead-face ((t(:weight bold))))
-  (avy-lead-face-0 ((t(:weight bold))))
+    (avy-lead-face ((t(:weight bold))))
+    (avy-lead-face-0 ((t(:weight bold))))
   )
 
 (use-package projectile

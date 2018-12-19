@@ -42,3 +42,7 @@
 ;; moving screen
 (global-set-key (kbd "M-<up>") 'golden-ratio-scroll-screen-down)
 (global-set-key (kbd "M-<down>") 'golden-ratio-scroll-screen-up)
+(global-set-key (kbd "C-w") 'switch-to-previous-buffer)
+
+;; neotree
+(global-set-key (kbd "C-b") 'neotree-toggle)
