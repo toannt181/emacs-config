@@ -18,17 +18,20 @@ There are two things you can do about this warning:
 (package-initialize)
 
 ;; This is only needed once, near the top of the file
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 (eval-when-compile
-  (require 'use-package))
+  (require 'use-package));; Load `use-package`
 
-(use-package foo)
+;;(require 'diminish)
+;;(require 'bind-key)
+
+(setq use-package-always-ensure t)
 
 ;; load other path
-(add-to-list 'load-path "~/.emacs.d/keybindings.el")
-(add-to-list 'load-path "~/.emacs.d/packages.el")
-
-;; theme
-(load-theme 'spacemacs-dark t)
+(load "~/.emacs.d/keybindings.el")
+(load "~/.emacs.d/packages.el")
 
 ;; font-size
 (set-face-attribute 'default nil :height 140)
@@ -44,8 +47,11 @@ There are two things you can do about this warning:
    (quote
     ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default)))
  '(menu-bar-mode nil)
- '(tool-bar-mode nil)
- '(scroll-bar-mode nil))
+ '(package-selected-packages
+   (quote
+    (counsel neotree sublimity spacemacs-theme restart-emacs foo use-package)))
+ '(scroll-bar-mode nil)
+ '(tool-bar-mode nil))
 
 ;; make typing delete/overwrites selected text
 (delete-selection-mode 1)
@@ -85,3 +91,8 @@ There are two things you can do about this warning:
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; Display line number when programming
+;; (add-hook 'prog-mode-hook 'linum-mode)
+(global-linum-mode t)
+(setq linum-format "%4d \u2502")
