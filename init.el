@@ -50,7 +50,7 @@ There are two things you can do about this warning:
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (avy yasnippet company counsel neotree sublimity spacemacs-theme restart-emacs foo use-package)))
+    (counsel-projectile projectile avy yasnippet company counsel neotree sublimity spacemacs-theme restart-emacs foo use-package)))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 

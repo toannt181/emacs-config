@@ -1,7 +1,7 @@
 ;; key bindings
 ;;(setq mac-option-modifier 'meta)
 ;;(setq mac-control-modifier nil)
-(setq mac-command-modifier "C-c")
+(setq mac-command-modifier 'meta)
 
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
@@ -35,3 +35,7 @@
 ;;(global-set-key (kbd "S-c <down>")  'windmove-down)
 (global-set-key (kbd "C-x 2") 'split-window-right)
 (global-set-key (kbd "C-x 3") 'split-window-below)
+
+;; project titile
+(global-set-key (kbd "M-p") 'counsel-projectile-find-file)
+(global-set-key (kbd "C-M-p") 'counsel-projectile-switch-project)
