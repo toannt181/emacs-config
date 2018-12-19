@@ -1,7 +1,7 @@
 ;; key bindings
 ;;(setq mac-option-modifier 'meta)
 ;;(setq mac-control-modifier nil)
-;;(setq mac-command-modifier 'meta)
+(setq mac-command-modifier "C-c")
 
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
@@ -21,3 +21,15 @@
 (global-set-key (kbd "C-x l") 'counsel-locate)
 (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
+
+(global-set-key (kbd "C-;") 'avy-goto-char)
+
+;; customize
+(global-set-key (kbd "C-c c") 'xah-comment-dwim)
+
+;; move window
+;; Move between windows
+;;(global-set-key (kbd "S-c <left>")  'windmove-left)
+;;(global-set-key (kbd "S-c <right>") 'windmove-right)
+;;(global-set-key (kbd "S-c <up>")    'windmove-up)
+;;(global-set-key (kbd "S-c <down>")  'windmove-down)

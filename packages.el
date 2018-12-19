@@ -18,3 +18,16 @@
 (use-package counsel
   :config (ivy-mode 1)
   :init)
+
+;; Autocomplete
+(use-package company
+  :config (global-company-mode t))
+
+;; Snippets
+(use-package yasnippet
+  :defer t
+  :init
+  (yas-global-mode 1))
+
+(use-package avy
+  :ensure t)

@@ -32,9 +32,10 @@ There are two things you can do about this warning:
 ;; load other path
 (load "~/.emacs.d/keybindings.el")
 (load "~/.emacs.d/packages.el")
+(load "~/.emacs.d/macros.el")
 
 ;; font-size
-(set-face-attribute 'default nil :height 140)
+(set-face-attribute 'default nil :height 150)
 
 ;; customize
 (custom-set-variables
@@ -49,7 +50,7 @@ There are two things you can do about this warning:
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (counsel neotree sublimity spacemacs-theme restart-emacs foo use-package)))
+    (avy yasnippet company counsel neotree sublimity spacemacs-theme restart-emacs foo use-package)))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 
@@ -63,7 +64,7 @@ There are two things you can do about this warning:
 (show-paren-mode 1)
 
 ;; remember cursor position, for emacs 25.1 or later
-(save-place-mode 1)
+;; (save-place-mode 1)
 
 ;; UTF-8 as default encoding
 (set-language-environment "UTF-8")
