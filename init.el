@@ -30,8 +30,8 @@ There are two things you can do about this warning:
 (setq use-package-always-ensure t)
 
 ;; load other path
-(load "~/.emacs.d/keybindings.el")
 (load "~/.emacs.d/packages.el")
+(load "~/.emacs.d/keybindings.el")
 (load "~/.emacs.d/macros.el")
 
 ;; font-size
