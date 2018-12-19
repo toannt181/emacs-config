@@ -1,5 +1,5 @@
 ;; key bindings
-;;(setq mac-option-modifier 'meta)
+(setq mac-option-modifier 'super)
 ;;(setq mac-control-modifier nil)
 (setq mac-command-modifier 'meta)
 
@@ -22,13 +22,12 @@
 (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
-(global-set-key (kbd "C-;") 'avy-goto-char)
+(global-set-key (kbd "C-f") 'avy-goto-char)
 
 ;; customize
 (global-set-key (kbd "C-c c") 'xah-comment-dwim)
 
-;; move window
-;; Move between windows
+;; move windoxfggxf;; Move between windows
 (global-set-key (kbd "C-,")  'windmove-left)
 (global-set-key (kbd "C-.") 'windmove-right)
 ;;(global-set-key (kbd "S-c <up>")    'windmove-up)
@@ -39,3 +38,7 @@
 ;; project titile
 (global-set-key (kbd "M-p") 'counsel-projectile-find-file)
 (global-set-key (kbd "C-M-p") 'counsel-projectile-switch-project)
+
+;; moving screen
+(global-set-key (kbd "M-<up>") 'golden-ratio-scroll-screen-down)
+(global-set-key (kbd "M-<down>") 'golden-ratio-scroll-screen-up)

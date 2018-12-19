@@ -50,7 +50,7 @@ There are two things you can do about this warning:
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (counsel-projectile projectile avy yasnippet company counsel neotree sublimity spacemacs-theme restart-emacs foo use-package)))
+    (golden-ratio-scroll-screen vue-mode counsel-projectile projectile avy yasnippet company counsel neotree sublimity spacemacs-theme restart-emacs foo use-package)))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 
@@ -97,3 +97,6 @@ There are two things you can do about this warning:
 ;; (add-hook 'prog-mode-hook 'linum-mode)
 (global-linum-mode t)
 (setq linum-format "%4d \u2502")
+
+(setq-default indent-tabs-mode nil)
+(setq js-indent-level 2)

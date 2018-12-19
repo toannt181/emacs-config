@@ -30,10 +30,27 @@
   (yas-global-mode 1))
 
 (use-package avy
-  :ensure t)
+  :ensure t
+  :commands (avy-goto-char)
+  :config
+  (setq avy-background t)
+  :custom-face
+  (avy-lead-face ((t(:weight bold))))
+  (avy-lead-face-0 ((t(:weight bold))))
+  )
 
 (use-package projectile
   :ensure t)
 
 (use-package counsel-projectile
+  :ensure t)
+
+(use-package vue-mode
+  :ensure t)
+(setq vue-mode-packages
+  '(vue-mode))
+
+(setq vue-mode-excluded-packages '())
+
+(use-package golden-ratio-scroll-screen
   :ensure t)
