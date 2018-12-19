@@ -29,7 +29,9 @@
 
 ;; move window
 ;; Move between windows
-;;(global-set-key (kbd "S-c <left>")  'windmove-left)
-;;(global-set-key (kbd "S-c <right>") 'windmove-right)
+(global-set-key (kbd "C-,")  'windmove-left)
+(global-set-key (kbd "C-.") 'windmove-right)
 ;;(global-set-key (kbd "S-c <up>")    'windmove-up)
 ;;(global-set-key (kbd "S-c <down>")  'windmove-down)
+(global-set-key (kbd "C-x 2") 'split-window-right)
+(global-set-key (kbd "C-x 3") 'split-window-below)
