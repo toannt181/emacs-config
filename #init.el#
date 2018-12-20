@@ -51,7 +51,7 @@ There are two things you can do about this warning:
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (add-node-modules-path flycheck-mode web-mode exec-path-from-shell js2-mode flycheck golden-ratio-scroll-screen vue-mode counsel-projectile projectile avy yasnippet company counsel neotree sublimity spacemacs-theme restart-emacs foo use-package)))
+    (exec-path-from-shell js2-mode flycheck golden-ratio-scroll-screen vue-mode counsel-projectile projectile avy yasnippet company counsel neotree sublimity spacemacs-theme restart-emacs foo use-package)))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 
@@ -102,6 +102,3 @@ There are two things you can do about this warning:
 
 (setq-default indent-tabs-mode nil)
 (setq js-indent-level 2)
-
-;; maximun screen on startup
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
