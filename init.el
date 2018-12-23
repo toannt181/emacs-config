@@ -30,6 +30,7 @@ There are two things you can do about this warning:
 (setq use-package-always-ensure t)
 
 ;; load other path
+(load "~/.emacs.d/default.el")
 (load "~/.emacs.d/packages.el")
 (load "~/.emacs.d/webmode.el")
 (load "~/.emacs.d/keybindings.el")
@@ -103,5 +104,5 @@ There are two things you can do about this warning:
 (setq-default indent-tabs-mode nil)
 (setq js-indent-level 2)
 
-;; maximun screen on startup
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
+;; disable awkard sound
+(setq ring-bell-function 'ignore)
