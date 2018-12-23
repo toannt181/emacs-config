@@ -47,3 +47,5 @@
 ;; neotree
 (global-set-key (kbd "C-b") 'neotree-toggle)
 
+;; change theme
+(global-set-key (kbd "C-c t") 'counsel-load-theme)

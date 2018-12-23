@@ -1,5 +1,7 @@
 ;; list packages
-(use-package doom-themes
+;;(use-package doom-themes
+;;  :ensure t)
+(use-package soothe-theme
   :ensure t)
 
 (use-package spacemacs-common
@@ -7,7 +9,7 @@
 
 ;; setting theme
 ;; (load-theme 'spacemacs-dark t)
-(load-theme 'doom-city-lights t)
+;; (load-theme 'doom-city-lights t)
 
 (use-package restart-emacs
   :ensure t)
@@ -73,3 +75,29 @@
 (use-package flycheck
   :ensure t
   :config (global-flycheck-mode))
+
+;; never lose your cursor
+(use-package beacon
+  :ensure t
+  :init (beacon-mode t))
+
+;; undo professional
+(use-package undo-tree
+  :ensure t
+  :config (global-undo-tree-mode))
+
+;; smart paren
+(use-package smartparens-config
+  :ensure smartparens
+  :config (smartparens-global-mode 1))
+
+;; use file editorconfig
+(use-package editorconfig
+  :ensure t
+  :commands editorconfig-mode
+  :delight editorconfig-mode
+  :init (add-hook 'prog-mode-hook #'editorconfig-mode)
+  :config
+  (progn
+    (add-to-list 'editorconfig-indentation-alist
+                 '(swift-mode swift-indent-offset))))

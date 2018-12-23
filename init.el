@@ -35,6 +35,7 @@ There are two things you can do about this warning:
 (load "~/.emacs.d/webmode.el")
 (load "~/.emacs.d/keybindings.el")
 (load "~/.emacs.d/macros.el")
+(setq custom-theme-directory "~/.emacs.d/themes")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -44,7 +45,7 @@ There are two things you can do about this warning:
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (focus-autosave-mode focus-autosave-mode\.el super-save web-mode vue-mode use-package spacemacs-theme restart-emacs neotree js2-mode golden-ratio-scroll-screen flycheck exec-path-from-shell doom-themes counsel-projectile company avy)))
+    (soothe-theme web-mode vue-mode use-package undo-tree super-save spacemacs-theme smartparens restart-emacs neotree js2-mode golden-ratio-scroll-screen focus-autosave-mode flycheck exec-path-from-shell editorconfig counsel-projectile company beacon avy)))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 (custom-set-faces
