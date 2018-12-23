@@ -19,4 +19,10 @@
   "Switch to previously open buffer.
 Repeated invocations toggle between the two most recently open buffers."
   (interactive)
+  (save-some-buffers t)
   (switch-to-buffer (other-buffer (current-buffer) 1)))
+
+;; save on lose focus
+(add-hook 'focus-out-hook (lambda () (save-some-buffers t)))
+(add-hook 'projectile-find-file-hook (lambda () (save-some-buffers t)))
+
