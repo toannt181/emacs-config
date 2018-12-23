@@ -1,14 +1,16 @@
 ;; list packages
-;;(use-package doom-themes
-;;  :ensure t)
-(use-package soothe-theme
+(use-package doom-themes
+  :ensure t)
+(use-package creamsody-theme
+  :ensure t)
+(use-package grayscale-theme
   :ensure t)
 
 (use-package spacemacs-common
     :ensure spacemacs-theme)
 
 ;; setting theme
-;; (load-theme 'spacemacs-dark t)
+;;(load-theme 'spacemacs-dark t)
 ;; (load-theme 'doom-city-lights t)
 
 (use-package restart-emacs
@@ -61,13 +63,6 @@
 
 (use-package counsel-projectile
   :ensure t)
-
-(use-package vue-mode
-  :ensure t)
-(setq vue-mode-packages
-  '(vue-mode))
-
-(setq vue-mode-excluded-packages '())
 
 (use-package golden-ratio-scroll-screen
   :ensure t)
