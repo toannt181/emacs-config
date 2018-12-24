@@ -11,9 +11,12 @@
 
 ;; setting theme
 ;;(load-theme 'spacemacs-dark t)
-;; (load-theme 'doom-city-lights t)
+(load-theme 'doom-city-lights t)
 
 (use-package restart-emacs
+  :ensure t)
+
+(use-package esup
   :ensure t)
 
 ;; Display a directory tree view on the left side
@@ -26,25 +29,11 @@
   :config (ivy-mode 1)
   :init)
 
-;; Autocomplete
-(use-package company
-  :config (global-company-mode t))
-
-;; Snippets
-;;(use-package yasnippet
-;;  :defer t
-;;  :init
-;;  (yas-global-mode 1))
-
-;; import javascript
-(use-package js2-mode
-  :ensure t)
-
 ;; make sure on mac get correct path
-(use-package exec-path-from-shell
-  :ensure t
-  :config (when (memq window-system '(mac ns x))
-  (exec-path-from-shell-initialize)))
+;; (use-package exec-path-from-shell
+;;  :ensure t
+;;  :config (when (memq window-system '(mac ns x))
+;;  (exec-path-from-shell-initialize)))
 
 (use-package avy
   :ensure t
@@ -59,17 +48,8 @@
 (use-package projectile
   :ensure t)
 
-(setq projectile-project-search-path '("~/work/"))
-
 (use-package counsel-projectile
   :ensure t)
-
-(use-package golden-ratio-scroll-screen
-  :ensure t)
-
-(use-package flycheck
-  :ensure t
-  :config (global-flycheck-mode))
 
 ;; never lose your cursor
 (use-package beacon
