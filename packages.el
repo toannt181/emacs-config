@@ -1,17 +1,17 @@
 ;; list packages
-(use-package doom-themes
-  :ensure t)
-(use-package creamsody-theme
-  :ensure t)
-(use-package grayscale-theme
-  :ensure t)
+;(use-package doom-themes
+;  :ensure t)
+;(use-package creamsody-theme
+;  :ensure t)
+;(use-package grayscale-theme
+;  :ensure t)
 
 (use-package spacemacs-common
     :ensure spacemacs-theme)
 
 ;; setting theme
-;;(load-theme 'spacemacs-dark t)
-(load-theme 'doom-city-lights t)
+(load-theme 'spacemacs-dark t)
+;(load-theme 'doom-city-lights t)
 
 (use-package restart-emacs
   :ensure t)
