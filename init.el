@@ -33,8 +33,10 @@ There are two things you can do about this warning:
 (load "~/.emacs.d/default.el")
 (load "~/.emacs.d/packages.el")
 (load "~/.emacs.d/webmode.el")
+(load "~/.emacs.d/stagging.el")
 (load "~/.emacs.d/keybindings.el")
 (load "~/.emacs.d/macros.el")
+(load "~/.emacs.d/themes.el")
 
 (setq custom-theme-directory "~/.emacs.d/themes")
 (custom-set-variables

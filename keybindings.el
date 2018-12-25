@@ -22,7 +22,7 @@
 (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
-(global-set-key (kbd "C-f") 'avy-goto-char)
+;(global-set-key (kbd "C-f") 'avy-goto-char)
 
 ;; customize
 (global-set-key (kbd "C-c c") 'xah-comment-dwim)
@@ -45,7 +45,11 @@
 (global-set-key (kbd "C-<tab>") 'switch-to-previous-buffer)
 
 ;; neotree
-(global-set-key (kbd "C-b") 'neotree-toggle)
+;(global-set-key (kbd "C-b") 'neotree-toggle)
 
 ;; change theme
 (global-set-key (kbd "C-c t") 'counsel-load-theme)
+
+;; emmet
+(global-set-key (kbd "C-M-j") 'emmet-next-edit-point)
+(global-set-key (kbd "C-M-S-j") 'emmet-prev-edit-point)
