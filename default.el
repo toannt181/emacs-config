@@ -65,3 +65,7 @@
 ;; disable awkard sound
 (setq ring-bell-function 'ignore)
 
+;; open in full height
+(when (window-system)
+  (set-frame-size (selected-frame) 100 80)
+  (set-frame-position (selected-frame) 50 30))

@@ -62,3 +62,20 @@
   (progn
     (add-to-list 'editorconfig-indentation-alist
                  '(swift-mode swift-indent-offset))))
+
+;; git
+(use-package magit
+  :ensure t)
+(use-package diff-hl
+  :ensure t
+  :config
+  
+  ;; Better looking colours for diff indicators /w spacemacs-light theme
+  (custom-set-faces
+  '(diff-hl-change ((t (:background "#3a81c3"))))
+  '(diff-hl-insert ((t (:background "#7ccd7c"))))
+  '(diff-hl-delete ((t (:background "#ee6363")))))
+
+  (global-diff-hl-mode)
+  (diff-hl-flydiff-mode)
+  (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh t))
