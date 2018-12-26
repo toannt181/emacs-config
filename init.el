@@ -33,12 +33,14 @@ There are two things you can do about this warning:
 (load "~/.emacs.d/default.el")
 (load "~/.emacs.d/packages.el")
 (load "~/.emacs.d/webmode.el")
+(load "~/.emacs.d/company.el")
+(load "~/.emacs.d/yasnippet.el")
 (load "~/.emacs.d/stagging.el")
 (load "~/.emacs.d/keybindings.el")
 (load "~/.emacs.d/macros.el")
 (load "~/.emacs.d/themes.el")
 
-(setq custom-theme-directory "~/.emacs.d/themes")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -57,4 +59,7 @@ There are two things you can do about this warning:
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(avy-lead-face ((t (:weight bold))))
- '(avy-lead-face-0 ((t (:weight bold)))))
+ '(avy-lead-face-0 ((t (:weight bold))))
+ '(diff-hl-change ((t (:background "#3a81c3"))))
+ '(diff-hl-delete ((t (:background "#ee6363"))))
+ '(diff-hl-insert ((t (:background "#7ccd7c")))))

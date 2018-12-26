@@ -30,7 +30,7 @@
          '(company-capf company-dabbrev company-tern company-css company-web company-files)))
 
   (add-hook 'web-mode-hook (lambda ()
-                             (tern-mode)
+                             ;(tern-mode)
                              (company-mode)
                              (emmet-mode)
                              (eslintd-fix-mode t)
