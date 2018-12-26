@@ -26,3 +26,7 @@ Repeated invocations toggle between the two most recently open buffers."
 (add-hook 'focus-out-hook (lambda () (save-some-buffers t)))
 (add-hook 'projectile-find-file-hook (lambda () (save-some-buffers t)))
 
+(defun split-and-jump-window-right ()
+  (interactive)
+  (split-window-right)
+  (other-window 1))
