@@ -35,6 +35,7 @@ There are two things you can do about this warning:
 (load "~/.emacs.d/webmode.el")
 (load "~/.emacs.d/company.el")
 (load "~/.emacs.d/yasnippet.el")
+(load "~/.emacs.d/neotree.el")
 (load "~/.emacs.d/stagging.el")
 (load "~/.emacs.d/keybindings.el")
 (load "~/.emacs.d/macros.el")
